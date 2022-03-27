@@ -4,6 +4,7 @@ const { Product, Category, Tag, ProductTag } = require('../../models');
 // The `/api/products` endpoint
 
 // GET all products
+// ***** THIS ROUTE WORKS ******
 router.get('/', async (req, res) => {
   // find all products
   // be sure to include its associated Category and Tag data
@@ -18,6 +19,7 @@ router.get('/', async (req, res) => {
 });
 
 // get one product
+// ***** THIS ROUTE WORKS ******
 router.get('/:id', async (req, res) => {
   // find a single product by its `id`
   // be sure to include its associated Category and Tag data
@@ -36,6 +38,7 @@ router.get('/:id', async (req, res) => {
 });
 
 // create new product
+// ***** THIS ROUTE WORKS ******
 router.post('/', (req, res) => {
   /* req.body should look like this...
     {
@@ -68,6 +71,7 @@ router.post('/', (req, res) => {
 });
 
 // update product
+// ***** THIS ROUTE WORKS ******
 router.put('/:id', (req, res) => {
   // update product data
   Product.update(req.body, {
@@ -120,7 +124,8 @@ router.delete('/:id', async (req, res) => {
     if(!productData) {
       res.status(404).json({ message: 'No product found with that id.'})
     }
-  } catch (error) {
+    res.status(200).json({ message: `Product with id ${req.params.id} successfully deleted.`})
+  } catch (err) {
     res.status(500).json(err)
   }
 });
