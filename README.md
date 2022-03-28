@@ -4,11 +4,23 @@
   
   Here are the GET requests to get all associated date: 
   
+
+https://user-images.githubusercontent.com/67548773/160421298-1862497b-dcaa-4c5a-9432-3d93a6a61778.mp4
+
+
   Here are the GET requests to grab a single item: 
   
+
+https://user-images.githubusercontent.com/67548773/160421328-e6d1ff1c-9715-4fe6-93b3-fb039f3f94e3.mp4
+
+
   And here are the POST, PUT, and DELETE requests: 
   
   
+
+https://user-images.githubusercontent.com/67548773/160421343-afa71ca4-787b-4a6d-b832-0bbcf7404670.mp4
+
+
   ## Table of Contents  
   &middot; [Installation](#installation)  
   &middot; [Contributing](#contributing)  
